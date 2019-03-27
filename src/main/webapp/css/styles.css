@@ -1,0 +1,65 @@
+table.data, th.data, td.data, th.filter {
+    padding: 2px;
+    text-align: left;
+    margin-bottom: 0.5%;
+}
+
+table.data, th.data, td.data {
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+}
+
+th.data {
+    width: 10%;
+}
+
+table.data {
+    left: 20%;
+    position: relative;
+}
+
+table.filter {
+    border-style: solid;
+    border-width: 1px;
+    left: 30.5%;
+    position: relative;
+    width: 30%;
+}
+
+th.filter {
+    width: 20%;
+}
+
+td.filter {
+    position: relative;
+    width: auto;
+}
+
+input.submit, input.reset, button.reset {
+    position: relative;
+    left: 40.444%;
+    width: 5%;
+    margin-top: 0.5%;
+}
+
+th {
+    background-color: rgb(180, 180, 180);
+}
+
+tr.data: nth-child(even) {
+    background-color: rgb(240,240,240);
+}
+
+label.filter {
+    text-align: right;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+
+}
+a:hover, a:active {
+  text-decoration: underline;
+}

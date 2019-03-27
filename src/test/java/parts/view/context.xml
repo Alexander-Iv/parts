@@ -1,0 +1,16 @@
+<Context>
+
+    <Resource name="jdbc/partsDB"
+              url="jdbc:postgresql://localhost:5432/dbparts"
+              username="uparts" password="1111"
+              driverClassName="org.postgresql.Driver"
+              auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"/>
+
+    <!--
+    <Resource name="jdbc/partsDB" auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+              username="bis" password="employer" driverClassName="oracle.jdbc.driver.OracleDriver"
+              url="jdbc:oracle:thin:@(DESCRIPTION= (ADDRESS= (PROTOCOL=TCP) (HOST=10.27.114.8) (PORT=1521)) (CONNECT_DATA= (SID=cbisdb)))"/>
+    -->
+</Context>

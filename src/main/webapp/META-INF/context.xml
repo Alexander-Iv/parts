@@ -1,0 +1,57 @@
+<Context>
+
+    <!-- ORACLE DataBase -->
+    <!--
+    <Resource name="jdbc/partsDB"
+              url="jdbc:oracle:thin:@(DESCRIPTION= (ADDRESS= (PROTOCOL=TCP) (HOST=10.27.114.8) (PORT=1521)) (CONNECT_DATA= (SID=cbisdb)))"
+              username="bis" password="employer"
+              driverClassName="oracle.jdbc.driver.OracleDriver"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxTotal="100"
+              maxIdle="30"
+              maxWaitMillis="10000"/>
+    -->
+    <!--
+    <Resource name="jdbc/partsDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              testWhileIdle="true"
+              testOnBorrow="true"
+              testOnReturn="false"
+              validationQuery="SELECT 1 FROM dual"
+              validationInterval="30000"
+              timeBetweenEvictionRunsMillis="30000"
+              maxActive="100"
+              minIdle="10"
+              maxWait="10000"
+              initialSize="10"
+              removeAbandonedTimeout="60"
+              removeAbandoned="true"
+              logAbandoned="true"
+              minEvictableIdleTimeMillis="30000"
+              jmxEnabled="true"
+              jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+              username="bis"
+              password="employer"
+              driverClassName="oracle.jdbc.driver.OracleDriver"
+              url="jdbc:oracle:thin:@(DESCRIPTION= (ADDRESS= (PROTOCOL=TCP) (HOST=10.27.114.8) (PORT=1521)) (CONNECT_DATA= (SID=cbisdb)))"/>
+    -->
+
+    <!--
+    <Resource name="jdbc/partsDB"
+              url="jdbc:postgresql://localhost:5432/dbparts"
+              username="uparts" password="1111"
+              driverClassName="org.postgresql.Driver"
+              auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"/>
+    -->
+    <Resource name="jdbc/partsDB"
+              url="jdbc:postgresql://ec2-54-247-70-127.eu-west-1.compute.amazonaws.com:5432/daj8rkho5lp5ko?sslmode=require"
+              username="adzpcvcfiffsdk" password="134fcdd807964d4ee40ceda9c7ca3563ae6560889094e7de7fd65bcf0003d67e"
+              driverClassName="org.postgresql.Driver"
+              auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"/>
+
+</Context>
